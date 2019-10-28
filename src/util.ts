@@ -2,7 +2,7 @@ import fileType from 'file-type'
 import { pipe } from 'fp-ts/lib/pipeable'
 import got from 'got'
 import { filter, join, lte, map, reduce } from 'ramda'
-import { Thumbor } from 'thumbor-ts/src'
+import { Thumbor } from 'thumbor-ts'
 
 export interface Meta {
   frameCount: number;

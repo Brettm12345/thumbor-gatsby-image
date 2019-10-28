@@ -1,6 +1,6 @@
 import { FixedObject, FluidObject } from 'gatsby-image'
 import { lt } from 'ramda'
-import { Thumbor } from 'thumbor-ts/src'
+import { Thumbor } from 'thumbor-ts'
 
 import { getBaseProps, getMeta } from './util'
 
