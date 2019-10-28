@@ -1,0 +1,25 @@
+{
+  "name": "thumbor-ts-gatsby-image",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .ts ./src",
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
+  "dependencies": {
+    "file-type": "^12.3.1",
+    "fp-ts": "^2.1.1",
+    "gatsby-image": "^2.2.29",
+    "got": "^10.0.0-alpha.2.2",
+    "ramda": "^0.26.1",
+    "thumbor-ts": "^1.0.4"
+  },
+  "devDependencies": {
+    "@brettm12345/eslint-config-node": "^1.0.5",
+    "@types/file-type": "^10.9.1",
+    "@types/ramda": "^0.26.33",
+    "typescript": "^3.6.4"
+  }
+}
