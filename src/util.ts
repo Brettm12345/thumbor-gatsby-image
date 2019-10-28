@@ -1,8 +1,8 @@
-import fileType from 'file-type'
-import { pipe } from 'fp-ts/lib/pipeable'
-import got from 'got'
-import { filter, join, lte, map, reduce } from 'ramda'
-import { Thumbor } from 'thumbor-ts'
+import fileType from "file-type";
+import { pipe } from "fp-ts/lib/pipeable";
+import got from "got";
+import { filter, join, lte, map, reduce } from "ramda";
+import { Thumbor } from "thumbor-ts";
 
 export interface Meta {
   frameCount: number;
@@ -11,12 +11,14 @@ export interface Meta {
   url: string;
 }
 
-export const getMeta = async (image: Thumbor): Promise<Meta> =>
-  (await got(image.metaDataOnly().buildUrl()).json<{
+export const getMeta = async (image: Thumbor): Promise<Meta> => {
+  const response = await got(`http://${image.metaDataOnly().buildUrl()}`).json<{
     thumbor: {
       source: Meta;
     };
-  }>()).thumbor.source;
+  }>();
+  return response.thumbor.source;
+};
 
 export const getUrls = (image: Thumbor): [string, string] => [
   image.buildUrl(),
@@ -60,7 +62,7 @@ export const getBaseProps = async (
   original: Meta,
   widths: number[],
   width: number,
-  height: number = 0
+  height = 0
 ) => {
   const [src, srcWebp] = getUrls(image.resize(width, height));
   const [srcSet, srcSetWebp] = getSrcSets(image, widths, original.width);
