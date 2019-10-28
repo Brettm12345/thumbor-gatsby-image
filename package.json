@@ -1,6 +1,6 @@
 {
   "name": "thumbor-ts-gatsby-image",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -22,7 +22,7 @@
     "gatsby-image": "^2.2.29",
     "got": "^10.0.0-alpha.2.2",
     "ramda": "^0.26.1",
-    "thumbor-ts": "^1.0.8",
+    "thumbor-ts": "^1.0.9",
     "typescript": "^3.6.4"
   },
   "devDependencies": {
