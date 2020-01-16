@@ -1,8 +1,8 @@
-import { FixedObject, FluidObject } from 'gatsby-image'
-import { lt } from 'ramda'
-import { Thumbor } from 'thumbor-ts'
+import { FixedObject, FluidObject } from "gatsby-image";
+import { lt } from "ramda";
+import { Thumbor } from "thumbor-ts";
 
-import { getBaseProps, getMeta } from './util'
+import { getBaseProps, getMeta } from "./util";
 
 interface FixedArgs {
   width?: number;

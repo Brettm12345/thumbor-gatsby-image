@@ -1,4 +1,4 @@
-import fileType from "file-type";
+import * as FileType from "file-type";
 import { pipe } from "fp-ts/lib/pipeable";
 import got from "got";
 import { filter, join, lte, map, reduce } from "ramda";
@@ -12,7 +12,7 @@ export interface Meta {
 }
 
 export const getMeta = async (image: Thumbor): Promise<Meta> => {
-  const response = await got(`http://${image.metaDataOnly().buildUrl()}`).json<{
+  const response = await got(image.metaDataOnly().buildUrl()).json<{
     thumbor: {
       source: Meta;
     };
@@ -29,7 +29,7 @@ type SrcSets = [string[], string[]];
 
 export const getBase64 = async (image: Thumbor): Promise<string> => {
   const buffer = await got(image.resize(20, 0).buildUrl()).buffer();
-  const type = fileType(buffer);
+  const type = await FileType.fromBuffer(buffer);
   if (!type)
     throw new Error(
       "Failed to generate the image thumbnail: couldn't fetch the file type"
