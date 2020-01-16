@@ -5,8 +5,8 @@ Auto convert `thumbor-ts` instances into `gatsby-image` compatible objects
 ## Usage
 
 ```typescript
-import React, { FC, useEffect, useState } from 'react'
-import Img, { FixedObject } from 'gatsby-image'
+import React, { FC } from 'react'
+import Img from 'gatsby-image'
 import { useFixed } from 'thumbor-ts-gatsby-image';
 import { Thumbor } from 'thumbor-ts';
 
@@ -17,7 +17,7 @@ const image = thumbor
     .setImagePath('00223lsvrnzeaf42.png')
     .smartCrop(true)
 
-const Img: React.FC = () => {
+const Img: FC = () => {
   const fixed = useFixed(image, { width: 200, height: 300 })
   return (
     <Img fixed={fixed} />
