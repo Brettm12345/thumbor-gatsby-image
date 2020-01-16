@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`thumbor gatsby image Fixed 1`] = `
+Object {
+  "aspectRatio": 1,
+  "base64": "",
+  "height": 400,
+  "src": "http://localhost/unsafe/400x400/react-day-picker.png",
+  "srcSet": "http://localhost/unsafe/400x400/react-day-picker.png 1x, http://localhost/unsafe/600x600/react-day-picker.png 1.5x, http://localhost/unsafe/800x800/react-day-picker.png 2x, http://localhost/unsafe/1200x1200/react-day-picker.png 3x",
+  "srcSetWebp": "http://localhost/unsafe/400x400/filters:format(webp)/react-day-picker.png 1x, http://localhost/unsafe/600x600/filters:format(webp)/react-day-picker.png 1.5x, http://localhost/unsafe/800x800/filters:format(webp)/react-day-picker.png 2x, http://localhost/unsafe/1200x1200/filters:format(webp)/react-day-picker.png 3x",
+  "srcWebp": "http://localhost/unsafe/400x400/filters:format(webp)/react-day-picker.png",
+  "width": 400,
+}
+`;
+
+exports[`thumbor gatsby image Fluid 1`] = `
+Object {
+  "aspectRatio": 0.6666666666666666,
+  "base64": "",
+  "sizes": "(max-width: 300px) 100vw, 300px",
+  "src": "http://localhost/unsafe/300x0/react-day-picker.png",
+  "srcSet": "http://localhost/unsafe/75x113/react-day-picker.png 75w, http://localhost/unsafe/150x225/react-day-picker.png 150w, http://localhost/unsafe/300x450/react-day-picker.png 300w, http://localhost/unsafe/450x675/react-day-picker.png 450w, http://localhost/unsafe/600x900/react-day-picker.png 600w, http://localhost/unsafe/900x1350/react-day-picker.png 900w",
+  "srcSetWebp": "http://localhost/unsafe/75x113/filters:format(webp)/react-day-picker.png 75w, http://localhost/unsafe/150x225/filters:format(webp)/react-day-picker.png 150w, http://localhost/unsafe/300x450/filters:format(webp)/react-day-picker.png 300w, http://localhost/unsafe/450x675/filters:format(webp)/react-day-picker.png 450w, http://localhost/unsafe/600x900/filters:format(webp)/react-day-picker.png 600w, http://localhost/unsafe/900x1350/filters:format(webp)/react-day-picker.png 900w",
+  "srcWebp": "http://localhost/unsafe/300x0/filters:format(webp)/react-day-picker.png",
+}
+`;
