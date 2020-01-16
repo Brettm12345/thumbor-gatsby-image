@@ -10,18 +10,16 @@ const getWidths = (sizeMultipliers: number[], width: number) =>
   sizeMultipliers.map(scale(width));
 
 interface BaseArgs {
-  /**
-   * @default true
-   */
+  /** @default true */
   base64?: boolean;
-  /**
-   * @default 20
-   */
+  /** @default 20 */
   base64Width?: number;
 }
 
 interface FixedArgs extends BaseArgs {
+  /** @default 400 */
   width?: number;
+  /** @default 0 - Automatically scale to aspect ratio */
   height?: number;
 }
 
@@ -56,8 +54,10 @@ export const fixed = async (
 };
 
 interface FluidArgs extends BaseArgs {
+  /** @default 800 */
   maxWidth?: number;
   maxHeight?: number;
+  /** @default "(max-width: ${maxWidth}px) 100vw, ${maxWidth}px" */
   sizes?: string;
   srcSetBreakpoints?: number[];
 }
