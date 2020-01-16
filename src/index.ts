@@ -50,7 +50,7 @@ export const fixed = async (
   });
   return {
     ...base,
-    height: width / base.aspectRatio,
+    height: Math.round(width / base.aspectRatio),
     width
   };
 };
