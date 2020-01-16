@@ -1,6 +1,6 @@
 {
   "name": "thumbor-ts-gatsby-image",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -21,6 +21,7 @@
     "fp-ts": "^2.1.1",
     "gatsby-image": "^2.2.29",
     "got": "^10.2.2",
+    "react": "^16.12.0",
     "thumbor-ts": "^1.1.5",
     "typescript": "^3.6.4"
   },
@@ -30,8 +31,5 @@
     "eslint-plugin-jest": "^23.6.0",
     "jest": "^24.9.0",
     "ts-jest": "^24.3.0"
-  },
-  "peerDependencies": {
-    "react": "^16.11.0"
   }
 }

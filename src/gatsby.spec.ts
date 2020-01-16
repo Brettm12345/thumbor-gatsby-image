@@ -1,6 +1,6 @@
 import { Thumbor } from "thumbor-ts";
 
-import { fluid, fixed } from ".";
+import { fluid, fixed } from "./gatsby";
 
 jest.mock("./remote");
 
