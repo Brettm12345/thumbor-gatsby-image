@@ -7,14 +7,15 @@ export interface Dimensions {
   height: number;
 }
 
-export const getDimensions = async (image: Thumbor): Promise<Dimensions> => {
-  const response = await got(image.metaDataOnly().buildUrl()).json<{
-    thumbor: {
-      source: Dimensions;
-    };
-  }>();
-  return response.thumbor.source;
-};
+interface MetadataResponse {
+  thumbor: {
+    source: Dimensions;
+  };
+}
+
+export const getDimensions = async (image: Thumbor): Promise<Dimensions> =>
+  (await got(image.metaDataOnly().buildUrl()).json<MetadataResponse>()).thumbor
+    .source;
 
 export const getBase64 = async (
   image: Thumbor,
