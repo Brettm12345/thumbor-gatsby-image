@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "baseUrl": "src",
     "declaration": true,
     "esModuleInterop": true,
-    "module": "commonjs",
+    "module": "ESNext",
     "noImplicitAny": true,
     "outDir": "dist",
     "strict": true,

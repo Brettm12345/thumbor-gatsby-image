@@ -1,6 +1,6 @@
 import * as FileType from "file-type";
 import got from "got";
-import { Thumbor } from "thumbor-ts";
+import { Thumbor } from "thumbor-ts/dist/types";
 
 export interface Dimensions {
   width: number;

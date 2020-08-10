@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { fixed as getFixed, fluid as getFluid } from "./gatsby";
 import { FixedObject, FluidObject } from "gatsby-image";
 
+export { getFixed, getFluid };
+
 export const useFixed = (...args: Parameters<typeof getFixed>) => {
   const [fixed, setFixed] = useState<FixedObject>();
   useEffect(() => {

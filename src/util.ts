@@ -1,6 +1,6 @@
 import { map, filter, mapWithIndex, unzip } from "fp-ts/lib/Array";
 import { pipe } from "fp-ts/lib/pipeable";
-import { Thumbor } from "thumbor-ts";
+import { Thumbor } from "thumbor-ts/dist/types";
 
 import { Dimensions, getBase64 } from "./remote";
 
