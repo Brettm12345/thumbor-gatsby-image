@@ -6,8 +6,8 @@ jest.mock("./remote");
 
 describe("thumbor gatsby image", () => {
   const image = thumbor({
-    serverUrl: "htp://thumbor",
-    imagePath: "example.png"
+    serverUrl: "http://thumbor",
+    imagePath: "example.png",
   });
   test("Fluid", async () => {
     expect(await fluid(image, { maxWidth: 300 })).toMatchSnapshot();

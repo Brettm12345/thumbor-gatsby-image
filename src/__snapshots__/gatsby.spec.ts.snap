@@ -5,10 +5,10 @@ Object {
   "aspectRatio": 1,
   "base64": "",
   "height": 400,
-  "src": "htp://thumbor/unsafe/400x400/example.png",
-  "srcSet": "htp://thumbor/unsafe/400x400/example.png 1x, htp://thumbor/unsafe/600x600/example.png 1.5x, htp://thumbor/unsafe/800x800/example.png 2x, htp://thumbor/unsafe/1200x1200/example.png 3x",
-  "srcSetWebp": "htp://thumbor/unsafe/400x400/filters:format(webp)/example.png 1x, htp://thumbor/unsafe/600x600/filters:format(webp)/example.png 1.5x, htp://thumbor/unsafe/800x800/filters:format(webp)/example.png 2x, htp://thumbor/unsafe/1200x1200/filters:format(webp)/example.png 3x",
-  "srcWebp": "htp://thumbor/unsafe/400x400/filters:format(webp)/example.png",
+  "src": "http://thumbor/unsafe/400x400/example.png",
+  "srcSet": "http://thumbor/unsafe/400x400/example.png 1x, http://thumbor/unsafe/600x600/example.png 1.5x, http://thumbor/unsafe/800x800/example.png 2x, http://thumbor/unsafe/1200x1200/example.png 3x",
+  "srcSetWebp": "http://thumbor/unsafe/400x400/filters:format(webp)/example.png 1x, http://thumbor/unsafe/600x600/filters:format(webp)/example.png 1.5x, http://thumbor/unsafe/800x800/filters:format(webp)/example.png 2x, http://thumbor/unsafe/1200x1200/filters:format(webp)/example.png 3x",
+  "srcWebp": "http://thumbor/unsafe/400x400/filters:format(webp)/example.png",
   "width": 400,
 }
 `;
@@ -18,9 +18,9 @@ Object {
   "aspectRatio": 0.6666666666666666,
   "base64": "",
   "sizes": "(max-width: 300px) 100vw, 300px",
-  "src": "htp://thumbor/unsafe/300x0/example.png",
-  "srcSet": "htp://thumbor/unsafe/75x113/example.png 75w, htp://thumbor/unsafe/150x225/example.png 150w, htp://thumbor/unsafe/300x450/example.png 300w, htp://thumbor/unsafe/450x675/example.png 450w, htp://thumbor/unsafe/600x900/example.png 600w, htp://thumbor/unsafe/900x1350/example.png 900w",
-  "srcSetWebp": "htp://thumbor/unsafe/75x113/filters:format(webp)/example.png 75w, htp://thumbor/unsafe/150x225/filters:format(webp)/example.png 150w, htp://thumbor/unsafe/300x450/filters:format(webp)/example.png 300w, htp://thumbor/unsafe/450x675/filters:format(webp)/example.png 450w, htp://thumbor/unsafe/600x900/filters:format(webp)/example.png 600w, htp://thumbor/unsafe/900x1350/filters:format(webp)/example.png 900w",
-  "srcWebp": "htp://thumbor/unsafe/300x0/filters:format(webp)/example.png",
+  "src": "http://thumbor/unsafe/300x0/example.png",
+  "srcSet": "http://thumbor/unsafe/75x113/example.png 75w, http://thumbor/unsafe/150x225/example.png 150w, http://thumbor/unsafe/300x450/example.png 300w, http://thumbor/unsafe/450x675/example.png 450w, http://thumbor/unsafe/600x900/example.png 600w, http://thumbor/unsafe/900x1350/example.png 900w",
+  "srcSetWebp": "http://thumbor/unsafe/75x113/filters:format(webp)/example.png 75w, http://thumbor/unsafe/150x225/filters:format(webp)/example.png 150w, http://thumbor/unsafe/300x450/filters:format(webp)/example.png 300w, http://thumbor/unsafe/450x675/filters:format(webp)/example.png 450w, http://thumbor/unsafe/600x900/filters:format(webp)/example.png 600w, http://thumbor/unsafe/900x1350/filters:format(webp)/example.png 900w",
+  "srcWebp": "http://thumbor/unsafe/300x0/filters:format(webp)/example.png",
 }
 `;
