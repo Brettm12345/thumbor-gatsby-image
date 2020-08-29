@@ -9,7 +9,7 @@ const join = (sep = "") => (arr: string[]) => arr.join(sep);
 
 export const getUrls = (image: Thumbor): [string, string] => [
   image.buildUrl(),
-  image.format("webp").buildUrl()
+  image.format("webp").buildUrl(),
 ];
 
 interface GetSrcSetsOptions {
@@ -25,7 +25,7 @@ export const getSrcSets = ({
   widths,
   aspectRatio,
   original,
-  getSrcSet
+  getSrcSet,
 }: GetSrcSetsOptions) =>
   pipe(
     widths,
@@ -60,13 +60,13 @@ export const getBaseProps = async ({
   ...rest
 }: GetBasePropsOptions) => {
   const aspectRatio =
-    height !== 0 ? width / height : original.width / original.height;
+    height !== 0 ? height / width : original.height / original.width;
   const [src, srcWebp] = getUrls(image.resize(width, height));
   const [srcSet, srcSetWebp] = getSrcSets({
     image,
     original,
     aspectRatio,
-    ...rest
+    ...rest,
   });
   return {
     aspectRatio,
@@ -76,6 +76,6 @@ export const getBaseProps = async ({
     src,
     srcWebp,
     srcSet,
-    srcSetWebp
+    srcSetWebp,
   };
 };
