@@ -7704,10 +7704,10 @@ through@^2.3.6:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=
 
-thumbor-ts@^1.3.89:
-  version "1.3.89"
-  resolved "https://registry.yarnpkg.com/thumbor-ts/-/thumbor-ts-1.3.89.tgz#107e45652cfcffc01b3c4d2667771e8b79cbe930"
-  integrity sha512-QljwvEqknGLS+2mMNG3shJGglm5Dw9Kc2qrUjW5sx93oV+8bYNZ53xqA59i0bSHUZejeX3uS3vuNUKmXzRic6g==
+thumbor-ts@^1.3.90:
+  version "1.3.90"
+  resolved "https://registry.yarnpkg.com/thumbor-ts/-/thumbor-ts-1.3.90.tgz#fd4a2c4a205c76a65f768ede9b6196a003956bdc"
+  integrity sha512-ARYcFESljRCpPPUbdn8THz/+uTPJ0wZ588Aa7PdgafkQhWjuV6UJkYc4nrykhU/PFImxjj2/78c/VV6gGu7Kcw==
   dependencies:
     crypto-js "4.0.0"
     fp-ts "2.6.1"
